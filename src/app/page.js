@@ -1,7 +1,6 @@
 import home from "./styles/css/home.module.css";
 import Nav from "./components/nav";
 import Hexagon from "./components/hexagon";
-import Head from "next/head";
 
 export default function Home() {
   const fieldWidth = 1000;
