@@ -1,18 +1,33 @@
 // out: "../css/home.module.css", compress: true, sourceMap: false
 
 .flexCenter(@dir) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: @dir;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: @dir;
 }
 
 .main {
-    .flexCenter(column);
-    background-color: var(--bgColor);
+  .flexCenter(column);
 }
 
 .title {
-    border: 1px solid red;
-    margin: var(--size_l);
+  margin: var(--size_l);
+}
+
+.gameField {
+  overflow: visible;
+  polygon {
+    transition: all 100ms ease-in-out;
+    &:hover {
+      fill: var(--color_primary);
+      cursor: pointer;
+    }
+  }
+  .land {
+    fill: #046604;
+  }
+  .water {
+    fill: #2d7afe80;
+  }
 }
