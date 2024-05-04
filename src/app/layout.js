@@ -5,7 +5,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Kingdom Keep | A hex-based strategy game",
-  description: "Kingdom Keep is a hex-based strategy game where you build and defend your kingdom.",
+  description:
+    "Kingdom Keep is a hex-based strategy game where you build and defend your kingdom.",
 };
 
 export default function RootLayout({ children }) {

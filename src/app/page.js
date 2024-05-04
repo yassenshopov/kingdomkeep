@@ -1,11 +1,12 @@
 import home from "./styles/css/home.module.css";
 import Nav from "./components/nav";
 import Hexagon from "./components/hexagon";
+import Head from "next/head";
 
 export default function Home() {
   const fieldWidth = 1000;
   const fieldHeight = 600;
-  const hexSize = 30;
+  const hexSize = 50;
   const numRows = Math.ceil(fieldHeight / (hexSize * Math.sqrt(3)));
   const numCols = Math.ceil(fieldWidth / (hexSize * 1.5));
 
