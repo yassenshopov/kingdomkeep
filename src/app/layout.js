@@ -7,6 +7,7 @@ export const metadata = {
   title: "Kingdom Keep | A hex-based strategy game",
   description:
     "Kingdom Keep is a hex-based strategy game where you build and defend your kingdom.",
+  icon: "./favicon.ico",
 };
 
 export default function RootLayout({ children }) {
