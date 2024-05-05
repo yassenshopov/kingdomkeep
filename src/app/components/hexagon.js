@@ -1,5 +1,5 @@
 // Hexagon.js
-export default function Hexagon({ x, y, size, color, className }) {
+export default function Hexagon({ x, y, size, color, className, index }) {
   const points = [
     [size * 0.5, 0],
     [size * 1.5, 0],
@@ -11,15 +11,25 @@ export default function Hexagon({ x, y, size, color, className }) {
     .map((point) => point.join(","))
     .join(" ");
   return (
+    <>
     <polygon
       points={points}
       fill={color}
       transform={`translate(${x},${y})`}
       style={{
-        stroke: "white",
-        strokeWidth: 2,
+        stroke: "transparent",
+        strokeWidth: 3,
       }}
       className={className}
-    ></polygon>
+      id={"hexagon_"+index}
+    >
+    </polygon>
+    <text fill="white"
+        x={x+0.6*size}
+        y={y+size}
+    >
+        {/* {index} */}
+    </text>
+    </>
   );
 }

@@ -5,6 +5,9 @@
   --size_m: var(--spacing-unit);
   --size_l: calc(var(--spacing-unit) * 1.5);
   --size_xl: calc(var(--spacing-unit) * 2);
+  --color_primary: #007bff;
+  --color_secondary: #6c757d;
+  --color_success: #28a745;
 }
 
 body, html {

@@ -18,7 +18,7 @@
 .gameField {
   overflow: visible;
   polygon {
-    transition: all 100ms ease-in-out;
+    transition: all 400ms ease-in-out;
     &:hover {
       fill: var(--color_primary);
       cursor: pointer;
@@ -29,5 +29,13 @@
   }
   .water {
     fill: #2d7afe80;
+  }
+  .castle {
+    fill: #01441c !important;
+  }
+  .border {
+    fill: #00000020;
+    stroke: #000000;
+    stroke-width: 0.5;
   }
 }
