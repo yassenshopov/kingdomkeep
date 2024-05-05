@@ -19,6 +19,8 @@ export default function Hexagon({ x, y, size, color, className, index }) {
       style={{
         stroke: "transparent",
         strokeWidth: 3,
+        // generate random opacity based on index
+        fillOpacity: 0.5 + (index % 5) * 0.1
       }}
       className={className}
       id={"hexagon_"+index}
